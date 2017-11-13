@@ -1,0 +1,306 @@
+<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="1.85.3">
+  <Settings>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="Experiment info" updates="None" val="{u'handedness': u'', u'session': u'', u'participant': u'', u'sex': u''}" valType="code"/>
+    <Param name="JS libs" updates="None" val="packaged" valType="str"/>
+    <Param name="Units" updates="None" val="use prefs" valType="str"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Window size (pixels)" updates="None" val="[1600, 900]" valType="code"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="OSF Project ID" updates="None" val="" valType="str"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Data filename" updates="None" val="'data/%s_%s_%s' %(expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="expName" updates="None" val="textInputTest" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+  </Settings>
+  <Routines>
+    <Routine name="begin">
+      <TextComponent name="text">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="你准备好开始了吗？&amp;#10;&amp;#10;准备好后按空格键" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="welcome">
+      <StaticComponent name="ISI">
+        <Param name="code" updates="None" val="" valType="code"/>
+        <Param name="name" updates="None" val="ISI" valType="code"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+      </StaticComponent>
+      <TextComponent name="text_welcome">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_welcome" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="您好!&amp;#10;請按空白鍵繼續。" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.075" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_welcome">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_welcome" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'space', ' '" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="end">
+      <TextComponent name="text_end">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_end" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="實驗結束，謝謝您的參與！" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[0, 0]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.08" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="instruction">
+      <TextComponent name="text_instruction">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_instruction" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="在每一題中，您會聽到一個中文詞，請您：&amp;#10;1. 決定您是否理解這個詞。&amp;#10;2. 打出這個詞。&amp;#10;請按空白鍵繼續。" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_instruction">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_instruction" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'space', ' '" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="sound_stimuli">
+      <TextComponent name="text_fixation">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_fixation" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="+" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_sound">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_sound" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'left','right'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <SoundComponent name="sound_test">
+        <Param name="sound" updates="set every repeat" val="$file" valType="str"/>
+        <Param name="volume" updates="constant" val="1" valType="code"/>
+        <Param name="name" updates="None" val="sound_test" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.5" valType="code"/>
+      </SoundComponent>
+    </Routine>
+    <Routine name="gatherText">
+      <CodeComponent name="code">
+        <Param name="Begin Experiment" updates="constant" val="inputText = u&quot;&quot;" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="theseKeys=u&quot;&quot;&amp;#10;shift_flag = False&amp;#10;text_type.alignHoriz ='left'" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="# let's store the final text string into the results finle...&amp;#10;thisExp.addData('inputText', inputText)&amp;#10;inputText=&quot;&quot;" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="n= len(theseKeys)&amp;#10;i = 0&amp;#10;while i &lt; n:&amp;#10;&amp;#10;    if theseKeys[i] == u'return':&amp;#10;        # pressing RETURN means time to stop&amp;#10;        continueRoutine = False&amp;#10;        break&amp;#10;&amp;#10;    elif theseKeys[i] == u'backspace':&amp;#10;        inputText = inputText[:-1]  # lose the final character&amp;#10;&amp;#10;    elif theseKeys[i] == u'space':&amp;#10;        inputText += ' '&amp;#10;&amp;#10;    else:&amp;#10;        if len(theseKeys[i]) == 1:&amp;#10;            inputText += theseKeys[i]&amp;#10;&amp;#10;    i += 1&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+      </CodeComponent>
+      <TextComponent name="text_type">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text_type" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="set every frame" val="$('What did you hear?\n' + inputText)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="[-0.5, 0]" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_type">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_type" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="store" updates="constant" val="all keys" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="welcome"/>
+    <Routine name="instruction"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="conditionsFile" updates="None" val="test.csv" valType="str"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[{'word': u'\u6642\u5019', 'file': u'stimuli/154.wav', 'word_id': 154}, {'word': u'\u7136\u5f8c', 'file': u'stimuli/489.wav', 'word_id': 489}, {'word': u'\u7684', 'file': u'stimuli/440.wav', 'word_id': 440}, {'word': u'\u8b8a\u5f97', 'file': u'stimuli/236.wav', 'word_id': 236}, {'word': u'\u51fa\u4f86', 'file': u'stimuli/184.wav', 'word_id': 184}, {'word': u'\u5c31\u662f', 'file': u'stimuli/114.wav', 'word_id': 114}, {'word': u'\u5c31\u662f', 'file': u'stimuli/366.wav', 'word_id': 366}, {'word': u'\u554a', 'file': u'stimuli/441.wav', 'word_id': 441}, {'word': u'\u4ee5\u5f8c', 'file': u'stimuli/462.wav', 'word_id': 462}, {'word': u'\u8aaa', 'file': u'stimuli/123.wav', 'word_id': 123}]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+    </LoopInitiator>
+    <Routine name="sound_stimuli"/>
+    <Routine name="gatherText"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="begin"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_2">
+      <Param name="conditionsFile" updates="None" val="stimuli.csv" valType="str"/>
+      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[{'word': u'\u807d', 'file': u'stimuli/44.wav', 'word_id': 44}, {'word': u'\u662f', 'file': u'stimuli/14.wav', 'word_id': 14}, {'word': u'\u500b', 'file': u'stimuli/172.wav', 'word_id': 172}, {'word': u'\u4ec0\u9ebc', 'file': u'stimuli/378.wav', 'word_id': 378}, {'word': u'mm', 'file': u'stimuli/289.wav', 'word_id': 289}, {'word': u'\u5b57', 'file': u'stimuli/408.wav', 'word_id': 408}, {'word': u'\u53ef\u662f', 'file': u'stimuli/100.wav', 'word_id': 100}, {'word': u'eh', 'file': u'stimuli/333.wav', 'word_id': 333}, {'word': u'\u6bcf', 'file': u'stimuli/320.wav', 'word_id': 320}, {'word': u'mm', 'file': u'stimuli/38.wav', 'word_id': 38}, {'word': u'\u6bd4\u8f03', 'file': u'stimuli/477.wav', 'word_id': 477}, {'word': u'\u7136\u5f8c', 'file': u'stimuli/47.wav', 'word_id': 47}, {'word': u'\u6839\u672c', 'file': u'stimuli/274.wav', 'word_id': 274}, {'word': u'\u883b', 'file': u'stimuli/280.wav', 'word_id': 280}, {'word': u'\u65e5\u672c\u4eba', 'file': u'stimuli/240.wav', 'word_id': 240}, {'word': u'\u500b', 'file': u'stimuli/10.wav', 'word_id': 10}, {'word': u'\u5c0d', 'file': u'stimuli/110.wav', 'word_id': 110}, {'word': u'\u4f86', 'file': u'stimuli/94.wav', 'word_id': 94}, {'word': u'\u7684', 'file': u'stimuli/336.wav', 'word_id': 336}, {'word': u'\u672c\u4f86', 'file': u'stimuli/480.wav', 'word_id': 480}, {'word': u'\u932f', 'file': u'stimuli/381.wav', 'word_id': 381}, {'word': u'\u4eba\u5bb6', 'file': u'stimuli/464.wav', 'word_id': 464}, {'word': u'\u5566', 'file': u'stimuli/469.wav', 'word_id': 469}, {'word': u'\u975e\u5e38', 'file': u'stimuli/223.wav', 'word_id': 223}, {'word': u'\u665a\u4e0a', 'file': u'stimuli/155.wav', 'word_id': 155}, {'word': u'\u90fd', 'file': u'stimuli/485.wav', 'word_id': 485}, {'word': u'\u53cd\u6b63', 'file': u'stimuli/92.wav', 'word_id': 92}, {'word': u'\u8003', 'file': u'stimuli/426.wav', 'word_id': 426}, {'word': u'\u9019\u6a23', 'file': u'stimuli/28.wav', 'word_id': 28}, {'word': u'\u81ea\u5df1', 'file': u'stimuli/463.wav', 'word_id': 463}, {'word': u'\u500b', 'file': u'stimuli/388.wav', 'word_id': 388}, {'word': u'\u554a', 'file': u'stimuli/62.wav', 'word_id': 62}, {'word': u'\u5728', 'file': u'stimuli/343.wav', 'word_id': 343}, {'word': u'\u65e5\u672c', 'file': u'stimuli/347.wav', 'word_id': 347}, {'word': u'\u90fd', 'file': u'stimuli/430.wav', 'word_id': 430}, {'word': u'\u8aaa', 'file': u'stimuli/423.wav', 'word_id': 423}, {'word': u'\u5229\u7528', 'file': u'stimuli/338.wav', 'word_id': 338}, {'word': u'\u81ea\u5df1', 'file': u'stimuli/72.wav', 'word_id': 72}, {'word': u'\u5b78\u6821', 'file': u'stimuli/241.wav', 'word_id': 241}, {'word': u'\u6700\u5f8c', 'file': u'stimuli/162.wav', 'word_id': 162}, {'word': u'heN', 'file': u'stimuli/458.wav', 'word_id': 458}, {'word': u'\u6642\u5019', 'file': u'stimuli/391.wav', 'word_id': 391}, {'word': u'\u6709', 'file': u'stimuli/452.wav', 'word_id': 452}, {'word': u'\u5c31', 'file': u'stimuli/75.wav', 'word_id': 75}, {'word': u'\u88dc\u7fd2', 'file': u'stimuli/318.wav', 'word_id': 318}, {'word': u'\u5927\u6982', 'file': u'stimuli/311.wav', 'word_id': 311}, {'word': u'\u883b', 'file': u'stimuli/253.wav', 'word_id': 253}, {'word': u'\u662f', 'file': u'stimuli/488.wav', 'word_id': 488}, {'word': u'\u53bb', 'file': u'stimuli/386.wav', 'word_id': 386}, {'word': u'\u9084', 'file': u'stimuli/45.wav', 'word_id': 45}, {'word': u'\u8aaa', 'file': u'stimuli/334.wav', 'word_id': 334}, {'word': u'\u5f88', 'file': u'stimuli/476.wav', 'word_id': 476}, {'word': u'\u6b77\u53f2\u7cfb', 'file': u'stimuli/308.wav', 'word_id': 308}, {'word': u'\u591a', 'file': u'stimuli/131.wav', 'word_id': 131}, {'word': u'\u4e00\u6a23', 'file': u'stimuli/215.wav', 'word_id': 215}, {'word': u'\u500b', 'file': u'stimuli/257.wav', 'word_id': 257}, {'word': u'\u7684', 'file': u'stimuli/21.wav', 'word_id': 21}, {'word': u'\u5076\u50cf', 'file': u'stimuli/380.wav', 'word_id': 380}, {'word': u'\u4e0a\u9762', 'file': u'stimuli/207.wav', 'word_id': 207}, {'word': u'\u8b1b', 'file': u'stimuli/263.wav', 'word_id': 263}, {'word': u'\u8981', 'file': u'stimuli/363.wav', 'word_id': 363}, {'word': u'\u8a8d\u8b58', 'file': u'stimuli/382.wav', 'word_id': 382}, {'word': u'\u5920', 'file': u'stimuli/60.wav', 'word_id': 60}, {'word': u'\u5c31', 'file': u'stimuli/254.wav', 'word_id': 254}, {'word': u'\u5728', 'file': u'stimuli/339.wav', 'word_id': 339}, {'word': u'\u90a3\u9ebc', 'file': u'stimuli/293.wav', 'word_id': 293}, {'word': u'heN', 'file': u'stimuli/434.wav', 'word_id': 434}, {'word': u'\u96fb\u5f71', 'file': u'stimuli/422.wav', 'word_id': 422}, {'word': u'\u7279\u5225', 'file': u'stimuli/265.wav', 'word_id': 265}, {'word': u'\u6b21', 'file': u'stimuli/36.wav', 'word_id': 36}, {'word': u'\u5c0d', 'file': u'stimuli/483.wav', 'word_id': 483}, {'word': u'\u6211', 'file': u'stimuli/46.wav', 'word_id': 46}, {'word': u'\u554a', 'file': u'stimuli/367.wav', 'word_id': 367}, {'word': u'\u4f86', 'file': u'stimuli/231.wav', 'word_id': 231}, {'word': u'\u7814\u7a76\u6240', 'file': u'stimuli/337.wav', 'word_id': 337}, {'word': u'\u90a3', 'file': u'stimuli/4.wav', 'word_id': 4}, {'word': u'\u4eba\u5bb6', 'file': u'stimuli/481.wav', 'word_id': 481}, {'word': u'\u6709', 'file': u'stimuli/399.wav', 'word_id': 399}, {'word': u'\u4eba', 'file': u'stimuli/195.wav', 'word_id': 195}, {'word': u'\u90a3\u88e1', 'file': u'stimuli/358.wav', 'word_id': 358}, {'word': u'\u5c31', 'file': u'stimuli/145.wav', 'word_id': 145}, {'word': u'\u8aaa', 'file': u'stimuli/221.wav', 'word_id': 221}, {'word': u'\u662f', 'file': u'stimuli/161.wav', 'word_id': 161}, {'word': u'hoN', 'file': u'stimuli/127.wav', 'word_id': 127}, {'word': u'\u500b', 'file': u'stimuli/53.wav', 'word_id': 53}, {'word': u'\u60f3', 'file': u'stimuli/7.wav', 'word_id': 7}, {'word': u'\u5a92\u9ad4', 'file': u'stimuli/288.wav', 'word_id': 288}, {'word': u'\u4ed6\u5011', 'file': u'stimuli/262.wav', 'word_id': 262}, {'word': u'\u500b', 'file': u'stimuli/181.wav', 'word_id': 181}, {'word': u'\u662f', 'file': u'stimuli/285.wav', 'word_id': 285}, {'word': u'\u5ff5', 'file': u'stimuli/33.wav', 'word_id': 33}, {'word': u'\u5dee', 'file': u'stimuli/379.wav', 'word_id': 379}, {'word': u'\u5b78\u751f', 'file': u'stimuli/445.wav', 'word_id': 445}, {'word': u'\u4ed6', 'file': u'stimuli/383.wav', 'word_id': 383}, {'word': u'\u8ab0', 'file': u'stimuli/393.wav', 'word_id': 393}, {'word': u'\u90a3', 'file': u'stimuli/437.wav', 'word_id': 437}, {'word': u'\u611b', 'file': u'stimuli/183.wav', 'word_id': 183}, {'word': u'\u7684', 'file': u'stimuli/491.wav', 'word_id': 491}, {'word': u'\u89ba\u5f97', 'file': u'stimuli/226.wav', 'word_id': 226}, {'word': u'\u4ec0\u9ebc', 'file': u'stimuli/410.wav', 'word_id': 410}, {'word': u'\u5f88', 'file': u'stimuli/411.wav', 'word_id': 411}, {'word': u'\u662f', 'file': u'stimuli/429.wav', 'word_id': 429}, {'word': u'x-', 'file': u'stimuli/364.wav', 'word_id': 364}, {'word': u'\u670b\u53cb', 'file': u'stimuli/24.wav', 'word_id': 24}, {'word': u'\u9084\u6709', 'file': u'stimuli/278.wav', 'word_id': 278}, {'word': u'\u7136\u5f8c', 'file': u'stimuli/194.wav', 'word_id': 194}, {'word': u'\u50cf', 'file': u'stimuli/51.wav', 'word_id': 51}, {'word': u'\u5f88', 'file': u'stimuli/465.wav', 'word_id': 465}, {'word': u'\u751f\u75c5', 'file': u'stimuli/58.wav', 'word_id': 58}, {'word': u'\u5f88\u591a', 'file': u'stimuli/346.wav', 'word_id': 346}, {'word': u'\u5c0d', 'file': u'stimuli/177.wav', 'word_id': 177}, {'word': u'\u5566', 'file': u'stimuli/497.wav', 'word_id': 497}, {'word': u'\u4ed6', 'file': u'stimuli/499.wav', 'word_id': 499}, {'word': u'\u518d', 'file': u'stimuli/414.wav', 'word_id': 414}, {'word': u'\u90a3', 'file': u'stimuli/449.wav', 'word_id': 449}, {'word': u'mm', 'file': u'stimuli/27.wav', 'word_id': 27}, {'word': u'\u5c31', 'file': u'stimuli/157.wav', 'word_id': 157}, {'word': u'\u5728', 'file': u'stimuli/255.wav', 'word_id': 255}, {'word': u'\u751f\u6d3b', 'file': u'stimuli/468.wav', 'word_id': 468}, {'word': u'\u5e0c\u671b', 'file': u'stimuli/19.wav', 'word_id': 19}, {'word': u'\u5c31', 'file': u'stimuli/12.wav', 'word_id': 12}, {'word': u'\u5f88', 'file': u'stimuli/189.wav', 'word_id': 189}, {'word': u'\u6703', 'file': u'stimuli/88.wav', 'word_id': 88}, {'word': u'\u4e5f', 'file': u'stimuli/95.wav', 'word_id': 95}, {'word': u'\u5b78', 'file': u'stimuli/404.wav', 'word_id': 404}, {'word': u'\u90fd', 'file': u'stimuli/287.wav', 'word_id': 287}, {'word': u'\u4f60', 'file': u'stimuli/120.wav', 'word_id': 120}, {'word': u'\u5c31', 'file': u'stimuli/317.wav', 'word_id': 317}, {'word': u'\u50cf', 'file': u'stimuli/208.wav', 'word_id': 208}, {'word': u'\u6211', 'file': u'stimuli/407.wav', 'word_id': 407}, {'word': u'\u5c0f\u5c0f', 'file': u'stimuli/310.wav', 'word_id': 310}, {'word': u'\u9019', 'file': u'stimuli/26.wav', 'word_id': 26}, {'word': u'\u4ed6', 'file': u'stimuli/269.wav', 'word_id': 269}, {'word': u'\u4ee5\u5f8c', 'file': u'stimuli/490.wav', 'word_id': 490}, {'word': u'\u6240\u4ee5', 'file': u'stimuli/147.wav', 'word_id': 147}, {'word': u'\u6240\u4ee5', 'file': u'stimuli/369.wav', 'word_id': 369}, {'word': u'\u500b', 'file': u'stimuli/13.wav', 'word_id': 13}, {'word': u'\u505a', 'file': u'stimuli/299.wav', 'word_id': 299}, {'word': u'\u5f88\u591a', 'file': u'stimuli/479.wav', 'word_id': 479}, {'word': u'\u4ee5\u524d', 'file': u'stimuli/322.wav', 'word_id': 322}, {'word': u'\u4ed6\u5011', 'file': u'stimuli/252.wav', 'word_id': 252}, {'word': u'\u6211', 'file': u'stimuli/376.wav', 'word_id': 376}, {'word': u'\u4e0d\u4e00\u5b9a', 'file': u'stimuli/461.wav', 'word_id': 461}, {'word': u'\u6f14', 'file': u'stimuli/235.wav', 'word_id': 235}, {'word': u'\u5169', 'file': u'stimuli/419.wav', 'word_id': 419}, {'word': u'\u4e00\u6a23', 'file': u'stimuli/307.wav', 'word_id': 307}, {'word': u'\u56de\u5230', 'file': u'stimuli/439.wav', 'word_id': 439}, {'word': u'\u5594', 'file': u'stimuli/406.wav', 'word_id': 406}, {'word': u'\u4ec0\u9ebc', 'file': u'stimuli/39.wav', 'word_id': 39}, {'word': u'\u4e00\u4e9b', 'file': u'stimuli/474.wav', 'word_id': 474}, {'word': u'\u6642\u5019', 'file': u'stimuli/91.wav', 'word_id': 91}, {'word': u'\u6c92\u6709', 'file': u'stimuli/482.wav', 'word_id': 482}, {'word': u'\u4ed6', 'file': u'stimuli/135.wav', 'word_id': 135}, {'word': u'\u60f3', 'file': u'stimuli/83.wav', 'word_id': 83}, {'word': u'\u6a23', 'file': u'stimuli/242.wav', 'word_id': 242}, {'word': u'\u7684', 'file': u'stimuli/205.wav', 'word_id': 205}, {'word': u'\u4e00\u5b9a', 'file': u'stimuli/330.wav', 'word_id': 330}, {'word': u'\u7684', 'file': u'stimuli/204.wav', 'word_id': 204}, {'word': u'\u6216', 'file': u'stimuli/141.wav', 'word_id': 141}, {'word': u'\u90e8\u5206', 'file': u'stimuli/331.wav', 'word_id': 331}, {'word': u'\u770b\u5230', 'file': u'stimuli/115.wav', 'word_id': 115}, {'word': u'\u4eba', 'file': u'stimuli/421.wav', 'word_id': 421}, {'word': u'\u81ea\u5df1', 'file': u'stimuli/225.wav', 'word_id': 225}, {'word': u'\u7136\u5f8c', 'file': u'stimuli/282.wav', 'word_id': 282}, {'word': u'\u500b', 'file': u'stimuli/29.wav', 'word_id': 29}, {'word': u'\u8208\u8da3', 'file': u'stimuli/3.wav', 'word_id': 3}, {'word': u'\u89ba\u5f97', 'file': u'stimuli/412.wav', 'word_id': 412}, {'word': u'\u6642\u5019', 'file': u'stimuli/70.wav', 'word_id': 70}, {'word': u'\u7136\u5f8c', 'file': u'stimuli/171.wav', 'word_id': 171}, {'word': u'\u4ed6', 'file': u'stimuli/302.wav', 'word_id': 302}, {'word': u'\u53bb', 'file': u'stimuli/124.wav', 'word_id': 124}, {'word': u'\u90a3', 'file': u'stimuli/119.wav', 'word_id': 119}, {'word': u'\u4e00\u9ede', 'file': u'stimuli/118.wav', 'word_id': 118}, {'word': u'\u80fd\u5920', 'file': u'stimuli/137.wav', 'word_id': 137}, {'word': u'\u56e0\u70ba', 'file': u'stimuli/478.wav', 'word_id': 478}, {'word': u'\u611b', 'file': u'stimuli/362.wav', 'word_id': 362}, {'word': u'\u80fd\u5920', 'file': u'stimuli/351.wav', 'word_id': 351}, {'word': u'\u4ed6', 'file': u'stimuli/102.wav', 'word_id': 102}, {'word': u'\u7684', 'file': u'stimuli/375.wav', 'word_id': 375}, {'word': u'\u5f88', 'file': u'stimuli/15.wav', 'word_id': 15}, {'word': u'\u4ed6\u5011', 'file': u'stimuli/455.wav', 'word_id': 455}, {'word': u'hoN', 'file': u'stimuli/165.wav', 'word_id': 165}, {'word': u'\u653e', 'file': u'stimuli/349.wav', 'word_id': 349}, {'word': u'hoN', 'file': u'stimuli/332.wav', 'word_id': 332}, {'word': u'\u90fd', 'file': u'stimuli/296.wav', 'word_id': 296}, {'word': u'\u597d', 'file': u'stimuli/179.wav', 'word_id': 179}, {'word': u'\u6709', 'file': u'stimuli/128.wav', 'word_id': 128}, {'word': u'\u6703', 'file': u'stimuli/323.wav', 'word_id': 323}, {'word': u'\u4ec0\u9ebc', 'file': u'stimuli/340.wav', 'word_id': 340}, {'word': u'\u4e0d', 'file': u'stimuli/352.wav', 'word_id': 352}, {'word': u'\u6211', 'file': u'stimuli/152.wav', 'word_id': 152}, {'word': u'\u7684', 'file': u'stimuli/454.wav', 'word_id': 454}, {'word': u'\u89c0\u5ff5', 'file': u'stimuli/2.wav', 'word_id': 2}, {'word': u'\u73fe\u5728', 'file': u'stimuli/104.wav', 'word_id': 104}, {'word': u'\u7279\u5225', 'file': u'stimuli/260.wav', 'word_id': 260}, {'word': u'\u90a3', 'file': u'stimuli/48.wav', 'word_id': 48}, {'word': u'\u5b83', 'file': u'stimuli/150.wav', 'word_id': 150}, {'word': u'\u9019', 'file': u'stimuli/232.wav', 'word_id': 232}, {'word': u'\u554a', 'file': u'stimuli/350.wav', 'word_id': 350}, {'word': u'\u90a3', 'file': u'stimuli/17.wav', 'word_id': 17}, {'word': u'\u751f\u6d3b', 'file': u'stimuli/35.wav', 'word_id': 35}, {'word': u'\u6c92', 'file': u'stimuli/168.wav', 'word_id': 168}, {'word': u'\u5e02\u5834', 'file': u'stimuli/286.wav', 'word_id': 286}, {'word': u'\u90a3\u4e9b', 'file': u'stimuli/192.wav', 'word_id': 192}, {'word': u'\u8aaa', 'file': u'stimuli/292.wav', 'word_id': 292}, {'word': u'\u4ed6', 'file': u'stimuli/353.wav', 'word_id': 353}, {'word': u'heN', 'file': u'stimuli/213.wav', 'word_id': 213}, {'word': u'\u7136\u5f8c', 'file': u'stimuli/90.wav', 'word_id': 90}, {'word': u'\u7684', 'file': u'stimuli/37.wav', 'word_id': 37}, {'word': u'\u4e5f', 'file': u'stimuli/272.wav', 'word_id': 272}, {'word': u'\u662f', 'file': u'stimuli/16.wav', 'word_id': 16}, {'word': u'\u4ed6', 'file': u'stimuli/250.wav', 'word_id': 250}, {'word': u'\u6c92\u6709', 'file': u'stimuli/325.wav', 'word_id': 325}, {'word': u'\u6642\u5019', 'file': u'stimuli/73.wav', 'word_id': 73}, {'word': u'\u6211\u5011', 'file': u'stimuli/298.wav', 'word_id': 298}, {'word': u'\u53ef\u662f', 'file': u'stimuli/384.wav', 'word_id': 384}, {'word': u'\u5148', 'file': u'stimuli/50.wav', 'word_id': 50}, {'word': u'\u58d3\u529b', 'file': u'stimuli/93.wav', 'word_id': 93}, {'word': u'\u7136\u5f8c', 'file': u'stimuli/356.wav', 'word_id': 356}, {'word': u'\u624d', 'file': u'stimuli/111.wav', 'word_id': 111}, {'word': u'\u5bb6', 'file': u'stimuli/98.wav', 'word_id': 98}, {'word': u'\u56e0\u70ba', 'file': u'stimuli/466.wav', 'word_id': 466}, {'word': u'\u5c0d', 'file': u'stimuli/186.wav', 'word_id': 186}, {'word': u'\u4ed6\u5011', 'file': u'stimuli/18.wav', 'word_id': 18}, {'word': u'\u6709', 'file': u'stimuli/431.wav', 'word_id': 431}, {'word': u'\u7d50\u679c', 'file': u'stimuli/303.wav', 'word_id': 303}, {'word': u'\u9084\u6709', 'file': u'stimuli/327.wav', 'word_id': 327}, {'word': u'\u500b', 'file': u'stimuli/402.wav', 'word_id': 402}, {'word': u'\u500b', 'file': u'stimuli/271.wav', 'word_id': 271}, {'word': u'\u5c0f', 'file': u'stimuli/493.wav', 'word_id': 493}, {'word': u'\u500b', 'file': u'stimuli/319.wav', 'word_id': 319}, {'word': u'\u7684', 'file': u'stimuli/8.wav', 'word_id': 8}, {'word': u'\u6bd4\u8f03', 'file': u'stimuli/309.wav', 'word_id': 309}, {'word': u'\u89ba\u5f97', 'file': u'stimuli/342.wav', 'word_id': 342}, {'word': u'\u4e00', 'file': u'stimuli/442.wav', 'word_id': 442}, {'word': u'\u5566', 'file': u'stimuli/453.wav', 'word_id': 453}, {'word': u'\u554a', 'file': u'stimuli/180.wav', 'word_id': 180}, {'word': u'\u901a\u901a', 'file': u'stimuli/22.wav', 'word_id': 22}, {'word': u'\u4e0d', 'file': u'stimuli/178.wav', 'word_id': 178}, {'word': u'eh', 'file': u'stimuli/156.wav', 'word_id': 156}, {'word': u'\u9019', 'file': u'stimuli/219.wav', 'word_id': 219}, {'word': u'\u53bb', 'file': u'stimuli/435.wav', 'word_id': 435}, {'word': u'\u7238\u7238', 'file': u'stimuli/387.wav', 'word_id': 387}, {'word': u'\u76f8\u4fe1', 'file': u'stimuli/164.wav', 'word_id': 164}, {'word': u'\u554a', 'file': u'stimuli/142.wav', 'word_id': 142}, {'word': u'\u81ea\u5df1', 'file': u'stimuli/117.wav', 'word_id': 117}, {'word': u'\u5c31\u662f', 'file': u'stimuli/222.wav', 'word_id': 222}, {'word': u'\u8070\u660e', 'file': u'stimuli/277.wav', 'word_id': 277}, {'word': u'\u8cbc', 'file': u'stimuli/394.wav', 'word_id': 394}, {'word': u'\u6211', 'file': u'stimuli/6.wav', 'word_id': 6}, {'word': u'\u4f86', 'file': u'stimuli/316.wav', 'word_id': 316}, {'word': u'\u56e0\u70ba', 'file': u'stimuli/133.wav', 'word_id': 133}, {'word': u'\u4e0d', 'file': u'stimuli/197.wav', 'word_id': 197}, {'word': u'\u662f', 'file': u'stimuli/403.wav', 'word_id': 403}, {'word': u'\u5f88\u591a', 'file': u'stimuli/224.wav', 'word_id': 224}, {'word': u'\u5340', 'file': u'stimuli/390.wav', 'word_id': 390}, {'word': u'\u4e5f', 'file': u'stimuli/443.wav', 'word_id': 443}, {'word': u'\u8fa6\u6cd5', 'file': u'stimuli/243.wav', 'word_id': 243}, {'word': u'\u6642\u5019', 'file': u'stimuli/163.wav', 'word_id': 163}, {'word': u'\u6709', 'file': u'stimuli/498.wav', 'word_id': 498}, {'word': u'\u505a', 'file': u'stimuli/41.wav', 'word_id': 41}, {'word': u'\u5728', 'file': u'stimuli/97.wav', 'word_id': 97}, {'word': u'\u662f', 'file': u'stimuli/64.wav', 'word_id': 64}, {'word': u'\u9084', 'file': u'stimuli/273.wav', 'word_id': 273}, {'word': u'\u7cdf', 'file': u'stimuli/424.wav', 'word_id': 424}, {'word': u'\u5c31', 'file': u'stimuli/344.wav', 'word_id': 344}, {'word': u'\u5c0d', 'file': u'stimuli/425.wav', 'word_id': 425}, {'word': u'\u505a', 'file': u'stimuli/220.wav', 'word_id': 220}, {'word': u'\u4ed6', 'file': u'stimuli/52.wav', 'word_id': 52}, {'word': u'\u5b78', 'file': u'stimuli/31.wav', 'word_id': 31}, {'word': u'\u53ef\u4ee5', 'file': u'stimuli/185.wav', 'word_id': 185}, {'word': u'\u89ba\u5f97', 'file': u'stimuli/144.wav', 'word_id': 144}, {'word': u'\u500b', 'file': u'stimuli/82.wav', 'word_id': 82}, {'word': u'\u5728', 'file': u'stimuli/201.wav', 'word_id': 201}, {'word': u'\u6bd4\u8f03', 'file': u'stimuli/447.wav', 'word_id': 447}, {'word': u'\u4e86', 'file': u'stimuli/25.wav', 'word_id': 25}, {'word': u'\u500b', 'file': u'stimuli/300.wav', 'word_id': 300}, {'word': u'\u554a', 'file': u'stimuli/360.wav', 'word_id': 360}, {'word': u'hoN', 'file': u'stimuli/63.wav', 'word_id': 63}, {'word': u'\u7684', 'file': u'stimuli/354.wav', 'word_id': 354}, {'word': u'\u584a', 'file': u'stimuli/405.wav', 'word_id': 405}, {'word': u'\u662f', 'file': u'stimuli/457.wav', 'word_id': 457}, {'word': u'\u4e5f', 'file': u'stimuli/371.wav', 'word_id': 371}, {'word': u'\u90a3', 'file': u'stimuli/79.wav', 'word_id': 79}, {'word': u'\u5c31', 'file': u'stimuli/456.wav', 'word_id': 456}, {'word': u'\u4eba', 'file': u'stimuli/475.wav', 'word_id': 475}, {'word': u'\u90a3', 'file': u'stimuli/74.wav', 'word_id': 74}, {'word': u'\u7d10\u897f\u862d', 'file': u'stimuli/398.wav', 'word_id': 398}, {'word': u'\u5728', 'file': u'stimuli/40.wav', 'word_id': 40}, {'word': u'\u6253', 'file': u'stimuli/96.wav', 'word_id': 96}, {'word': u'\u5176\u5be6', 'file': u'stimuli/108.wav', 'word_id': 108}, {'word': u'\u79ae\u62dc', 'file': u'stimuli/159.wav', 'word_id': 159}, {'word': u'\u8981', 'file': u'stimuli/409.wav', 'word_id': 409}, {'word': u'\u4e86', 'file': u'stimuli/212.wav', 'word_id': 212}, {'word': u'\u540d\u5b57', 'file': u'stimuli/473.wav', 'word_id': 473}, {'word': u'\u89ba\u5f97', 'file': u'stimuli/71.wav', 'word_id': 71}, {'word': u'\u554a', 'file': u'stimuli/244.wav', 'word_id': 244}, {'word': u'\u5566', 'file': u'stimuli/34.wav', 'word_id': 34}, {'word': u'\u4e86', 'file': u'stimuli/355.wav', 'word_id': 355}, {'word': u'\u540d\u5b57', 'file': u'stimuli/256.wav', 'word_id': 256}, {'word': u'hoN', 'file': u'stimuli/199.wav', 'word_id': 199}, {'word': u'\u5176\u5be6', 'file': u'stimuli/9.wav', 'word_id': 9}, {'word': u'\u7136\u5f8c', 'file': u'stimuli/67.wav', 'word_id': 67}, {'word': u'\u53ef\u4ee5', 'file': u'stimuli/193.wav', 'word_id': 193}, {'word': u'\u670b\u53cb', 'file': u'stimuli/138.wav', 'word_id': 138}, {'word': u'\u554a', 'file': u'stimuli/84.wav', 'word_id': 84}, {'word': u'\u9322', 'file': u'stimuli/446.wav', 'word_id': 446}, {'word': u'\u7528', 'file': u'stimuli/167.wav', 'word_id': 167}, {'word': u'uh', 'file': u'stimuli/30.wav', 'word_id': 30}, {'word': u'\u73fe\u5728', 'file': u'stimuli/85.wav', 'word_id': 85}, {'word': u'\u5c31', 'file': u'stimuli/341.wav', 'word_id': 341}, {'word': u'\u9084', 'file': u'stimuli/174.wav', 'word_id': 174}, {'word': u'\u4f60', 'file': u'stimuli/389.wav', 'word_id': 389}, {'word': u'\u9019\u6a23\u5b50', 'file': u'stimuli/321.wav', 'word_id': 321}, {'word': u'\u4e00\u4e9b', 'file': u'stimuli/169.wav', 'word_id': 169}, {'word': u'\u5f97', 'file': u'stimuli/432.wav', 'word_id': 432}, {'word': u'hm', 'file': u'stimuli/228.wav', 'word_id': 228}, {'word': u'\u7136\u5f8c', 'file': u'stimuli/372.wav', 'word_id': 372}, {'word': u'\u662f', 'file': u'stimuli/266.wav', 'word_id': 266}, {'word': u'\u6211', 'file': u'stimuli/467.wav', 'word_id': 467}, {'word': u'\u6211\u5011', 'file': u'stimuli/361.wav', 'word_id': 361}, {'word': u'\u5f88', 'file': u'stimuli/249.wav', 'word_id': 249}, {'word': u'\u5566', 'file': u'stimuli/140.wav', 'word_id': 140}, {'word': u'\u90fd', 'file': u'stimuli/312.wav', 'word_id': 312}, {'word': u'\u53bb', 'file': u'stimuli/136.wav', 'word_id': 136}, {'word': u'\u60f3\u8aaa', 'file': u'stimuli/239.wav', 'word_id': 239}, {'word': u'\u662f', 'file': u'stimuli/202.wav', 'word_id': 202}, {'word': u'\u6c92\u6709', 'file': u'stimuli/191.wav', 'word_id': 191}, {'word': u'\u6211', 'file': u'stimuli/101.wav', 'word_id': 101}, {'word': u'\u7684', 'file': u'stimuli/125.wav', 'word_id': 125}, {'word': u'\u4e00', 'file': u'stimuli/370.wav', 'word_id': 370}, {'word': u'\u7684', 'file': u'stimuli/1.wav', 'word_id': 1}, {'word': u'\u9019\u908a', 'file': u'stimuli/43.wav', 'word_id': 43}, {'word': u'\u554a', 'file': u'stimuli/284.wav', 'word_id': 284}, {'word': u'\u5916\u9762', 'file': u'stimuli/170.wav', 'word_id': 170}, {'word': u'\u7684', 'file': u'stimuli/436.wav', 'word_id': 436}, {'word': u'\u5148', 'file': u'stimuli/275.wav', 'word_id': 275}, {'word': u'\u6709', 'file': u'stimuli/160.wav', 'word_id': 160}, {'word': u'\u5f88', 'file': u'stimuli/99.wav', 'word_id': 99}, {'word': u'\u6211', 'file': u'stimuli/113.wav', 'word_id': 113}, {'word': u'\u5dee\u4e0d\u591a', 'file': u'stimuli/175.wav', 'word_id': 175}, {'word': u'\u5f88\u591a', 'file': u'stimuli/385.wav', 'word_id': 385}, {'word': u'\u4f60', 'file': u'stimuli/329.wav', 'word_id': 329}, {'word': u'uN', 'file': u'stimuli/268.wav', 'word_id': 268}, {'word': u'\u89ba\u5f97', 'file': u'stimuli/134.wav', 'word_id': 134}, {'word': u'\u5305\u62ec', 'file': u'stimuli/176.wav', 'word_id': 176}, {'word': u'\u5973\u5152', 'file': u'stimuli/417.wav', 'word_id': 417}, {'word': u'\u9032\u53bb', 'file': u'stimuli/129.wav', 'word_id': 129}, {'word': u'\u8ddf', 'file': u'stimuli/290.wav', 'word_id': 290}, {'word': u'\u4eba', 'file': u'stimuli/492.wav', 'word_id': 492}, {'word': u'\u4e5f', 'file': u'stimuli/182.wav', 'word_id': 182}, {'word': u'\u4e86', 'file': u'stimuli/281.wav', 'word_id': 281}, {'word': u'\u4e00\u4e9b', 'file': u'stimuli/433.wav', 'word_id': 433}, {'word': u'X', 'file': u'stimuli/306.wav', 'word_id': 306}, {'word': u'\u4ee5\u524d', 'file': u'stimuli/210.wav', 'word_id': 210}, {'word': u'\u5e79\u561b', 'file': u'stimuli/294.wav', 'word_id': 294}, {'word': u'\u8b8a\u6210', 'file': u'stimuli/348.wav', 'word_id': 348}, {'word': u'\u5c31', 'file': u'stimuli/59.wav', 'word_id': 59}, {'word': u'\u662f', 'file': u'stimuli/472.wav', 'word_id': 472}, {'word': u'\u5c31', 'file': u'stimuli/459.wav', 'word_id': 459}, {'word': u'\u6211', 'file': u'stimuli/301.wav', 'word_id': 301}, {'word': u'\u8aaa', 'file': u'stimuli/149.wav', 'word_id': 149}, {'word': u'\u5566', 'file': u'stimuli/188.wav', 'word_id': 188}, {'word': u'\u7684', 'file': u'stimuli/396.wav', 'word_id': 396}, {'word': u'\u6211', 'file': u'stimuli/54.wav', 'word_id': 54}, {'word': u'\u9019\u6a23', 'file': u'stimuli/413.wav', 'word_id': 413}, {'word': u'\u500b', 'file': u'stimuli/5.wav', 'word_id': 5}, {'word': u'\u5be6\u7fd2', 'file': u'stimuli/103.wav', 'word_id': 103}, {'word': u'\u8ab0', 'file': u'stimuli/121.wav', 'word_id': 121}, {'word': u'\u5f9e', 'file': u'stimuli/233.wav', 'word_id': 233}, {'word': u'\u793e\u6703', 'file': u'stimuli/313.wav', 'word_id': 313}, {'word': u'\u800c', 'file': u'stimuli/315.wav', 'word_id': 315}, {'word': u'\u7761\u89ba', 'file': u'stimuli/279.wav', 'word_id': 279}, {'word': u'\u4e0d', 'file': u'stimuli/305.wav', 'word_id': 305}, {'word': u'\u5fc5\u9808', 'file': u'stimuli/80.wav', 'word_id': 80}, {'word': u'\u6839\u672c', 'file': u'stimuli/139.wav', 'word_id': 139}, {'word': u'\u7f8e\u570b', 'file': u'stimuli/32.wav', 'word_id': 32}, {'word': u'\u5c31', 'file': u'stimuli/126.wav', 'word_id': 126}, {'word': u'\u90a3', 'file': u'stimuli/20.wav', 'word_id': 20}, {'word': u'\u6bd4\u8f03', 'file': u'stimuli/324.wav', 'word_id': 324}, {'word': u'\u5230', 'file': u'stimuli/328.wav', 'word_id': 328}, {'word': u'\u9060', 'file': u'stimuli/276.wav', 'word_id': 276}, {'word': u'\u611f\u89ba', 'file': u'stimuli/295.wav', 'word_id': 295}, {'word': u'\u6703', 'file': u'stimuli/270.wav', 'word_id': 270}, {'word': u'\u767c', 'file': u'stimuli/132.wav', 'word_id': 132}, {'word': u'\u5e74', 'file': u'stimuli/428.wav', 'word_id': 428}, {'word': u'\u65b0', 'file': u'stimuli/357.wav', 'word_id': 357}, {'word': u'\u554a', 'file': u'stimuli/297.wav', 'word_id': 297}, {'word': u'\u500b', 'file': u'stimuli/261.wav', 'word_id': 261}, {'word': u'\u9084', 'file': u'stimuli/49.wav', 'word_id': 49}, {'word': u'\u4ed6', 'file': u'stimuli/264.wav', 'word_id': 264}, {'word': u'\u6211\u5011', 'file': u'stimuli/214.wav', 'word_id': 214}, {'word': u'\u4e5f', 'file': u'stimuli/105.wav', 'word_id': 105}, {'word': u'\u5403', 'file': u'stimuli/153.wav', 'word_id': 153}, {'word': u'\u7684', 'file': u'stimuli/335.wav', 'word_id': 335}, {'word': u'\u6b21', 'file': u'stimuli/234.wav', 'word_id': 234}, {'word': u'\u4e00\u4e9b', 'file': u'stimuli/496.wav', 'word_id': 496}, {'word': u'\u60f3', 'file': u'stimuli/392.wav', 'word_id': 392}, {'word': u'\u53bb', 'file': u'stimuli/450.wav', 'word_id': 450}, {'word': u'\u500b', 'file': u'stimuli/487.wav', 'word_id': 487}, {'word': u'\u554a', 'file': u'stimuli/246.wav', 'word_id': 246}, {'word': u'\u96c6', 'file': u'stimuli/444.wav', 'word_id': 444}, {'word': u'\u662f', 'file': u'stimuli/198.wav', 'word_id': 198}, {'word': u'\u8981', 'file': u'stimuli/314.wav', 'word_id': 314}, {'word': u'\u90a3', 'file': u'stimuli/227.wav', 'word_id': 227}, {'word': u'\u4e5f', 'file': u'stimuli/415.wav', 'word_id': 415}, {'word': u'\u8b93', 'file': u'stimuli/291.wav', 'word_id': 291}, {'word': u'\u4f60', 'file': u'stimuli/238.wav', 'word_id': 238}, {'word': u'\u4e00\u6a23', 'file': u'stimuli/259.wav', 'word_id': 259}, {'word': u'\u770b', 'file': u'stimuli/484.wav', 'word_id': 484}, {'word': u'\u89ba\u5f97', 'file': u'stimuli/218.wav', 'word_id': 218}, {'word': u'\u4f60', 'file': u'stimuli/229.wav', 'word_id': 229}, {'word': u'\u9019\u6a23', 'file': u'stimuli/460.wav', 'word_id': 460}, {'word': u'\u4e00\u9ede', 'file': u'stimuli/216.wav', 'word_id': 216}, {'word': u'\u5c24\u5176', 'file': u'stimuli/304.wav', 'word_id': 304}, {'word': u'\u90a3', 'file': u'stimuli/116.wav', 'word_id': 116}, {'word': u'\u9084\u662f', 'file': u'stimuli/368.wav', 'word_id': 368}, {'word': u'\u53ef\u4ee5', 'file': u'stimuli/471.wav', 'word_id': 471}, {'word': u'\u9019\u6a23', 'file': u'stimuli/248.wav', 'word_id': 248}, {'word': u'\u6bd4\u8f03', 'file': u'stimuli/217.wav', 'word_id': 217}, {'word': u'\u4ee5\u524d', 'file': u'stimuli/23.wav', 'word_id': 23}, {'word': u'\u670b\u53cb', 'file': u'stimuli/203.wav', 'word_id': 203}, {'word': u'\u9019\u6a23', 'file': u'stimuli/65.wav', 'word_id': 65}, {'word': u'\u662f', 'file': u'stimuli/377.wav', 'word_id': 377}, {'word': u'\u5e38\u5e38', 'file': u'stimuli/401.wav', 'word_id': 401}, {'word': u'\u7136\u5f8c', 'file': u'stimuli/69.wav', 'word_id': 69}, {'word': u'\u6211', 'file': u'stimuli/86.wav', 'word_id': 86}, {'word': u'\u554a', 'file': u'stimuli/112.wav', 'word_id': 112}, {'word': u'\u6211', 'file': u'stimuli/345.wav', 'word_id': 345}, {'word': u'\u8ddf', 'file': u'stimuli/56.wav', 'word_id': 56}, {'word': u'\u5c31', 'file': u'stimuli/57.wav', 'word_id': 57}, {'word': u'\u6211', 'file': u'stimuli/373.wav', 'word_id': 373}, {'word': u'\u7684', 'file': u'stimuli/130.wav', 'word_id': 130}, {'word': u'\u7684', 'file': u'stimuli/173.wav', 'word_id': 173}, {'word': u'\u53cd\u6b63', 'file': u'stimuli/143.wav', 'word_id': 143}, {'word': u'\u5dee', 'file': u'stimuli/109.wav', 'word_id': 109}, {'word': u'\u6709', 'file': u'stimuli/77.wav', 'word_id': 77}, {'word': u'\u4ed6', 'file': u'stimuli/418.wav', 'word_id': 418}, {'word': u'\u597d\u73a9', 'file': u'stimuli/448.wav', 'word_id': 448}, {'word': u'\u90a3', 'file': u'stimuli/470.wav', 'word_id': 470}, {'word': u'\u5f88', 'file': u'stimuli/486.wav', 'word_id': 486}, {'word': u'\u4eba', 'file': u'stimuli/230.wav', 'word_id': 230}, {'word': u'\u90a3\u9ebc', 'file': u'stimuli/397.wav', 'word_id': 397}, {'word': u'\u597d', 'file': u'stimuli/258.wav', 'word_id': 258}, {'word': u'\u5c0d', 'file': u'stimuli/359.wav', 'word_id': 359}, {'word': u'\u6216', 'file': u'stimuli/76.wav', 'word_id': 76}, {'word': u'\u90fd', 'file': u'stimuli/251.wav', 'word_id': 251}, {'word': u'\u83e0\u83dc', 'file': u'stimuli/107.wav', 'word_id': 107}, {'word': u'\u5e38\u5e38', 'file': u'stimuli/365.wav', 'word_id': 365}, {'word': u'\u6211', 'file': u'stimuli/122.wav', 'word_id': 122}, {'word': u'\u5c31\u662f', 'file': u'stimuli/55.wav', 'word_id': 55}, {'word': u'\u7cdf\u7cd5', 'file': u'stimuli/267.wav', 'word_id': 267}, {'word': u'\u627e', 'file': u'stimuli/196.wav', 'word_id': 196}, {'word': u'\u90fd', 'file': u'stimuli/245.wav', 'word_id': 245}, {'word': u'\u89ba\u5f97', 'file': u'stimuli/78.wav', 'word_id': 78}, {'word': u'\u5538\u4f5b', 'file': u'stimuli/500.wav', 'word_id': 500}, {'word': u'\u500b', 'file': u'stimuli/416.wav', 'word_id': 416}, {'word': u'\u5f88\u591a', 'file': u'stimuli/68.wav', 'word_id': 68}, {'word': u'\u6211', 'file': u'stimuli/211.wav', 'word_id': 211}, {'word': u'\u8981', 'file': u'stimuli/200.wav', 'word_id': 200}, {'word': u'\u5206', 'file': u'stimuli/146.wav', 'word_id': 146}, {'word': u'\u90a3', 'file': u'stimuli/87.wav', 'word_id': 87}, {'word': u'\u4e86', 'file': u'stimuli/166.wav', 'word_id': 166}, {'word': u'\u4ed6', 'file': u'stimuli/438.wav', 'word_id': 438}, {'word': u'\u6709', 'file': u'stimuli/81.wav', 'word_id': 81}, {'word': u'\u6c92\u6709', 'file': u'stimuli/187.wav', 'word_id': 187}, {'word': u'\u8981', 'file': u'stimuli/209.wav', 'word_id': 209}, {'word': u'\u7684', 'file': u'stimuli/42.wav', 'word_id': 42}, {'word': u'\u5927', 'file': u'stimuli/158.wav', 'word_id': 158}, {'word': u'\u5c0d', 'file': u'stimuli/494.wav', 'word_id': 494}, {'word': u'\u6211', 'file': u'stimuli/451.wav', 'word_id': 451}, {'word': u'\u7136\u5f8c', 'file': u'stimuli/11.wav', 'word_id': 11}, {'word': u'\u79c1\u7acb', 'file': u'stimuli/106.wav', 'word_id': 106}, {'word': u'\u597d\u50cf', 'file': u'stimuli/151.wav', 'word_id': 151}, {'word': u'hoN', 'file': u'stimuli/247.wav', 'word_id': 247}, {'word': u'\u88e1\u9762', 'file': u'stimuli/66.wav', 'word_id': 66}, {'word': u'\u4e00\u76f4', 'file': u'stimuli/400.wav', 'word_id': 400}, {'word': u'\u5341\u56db', 'file': u'stimuli/237.wav', 'word_id': 237}, {'word': u'\u6211\u5011', 'file': u'stimuli/495.wav', 'word_id': 495}, {'word': u'\u4e00', 'file': u'stimuli/190.wav', 'word_id': 190}, {'word': u'mm', 'file': u'stimuli/148.wav', 'word_id': 148}, {'word': u'\u90a3', 'file': u'stimuli/89.wav', 'word_id': 89}, {'word': u'\u8b1b\u8a71', 'file': u'stimuli/283.wav', 'word_id': 283}, {'word': u'\u5538', 'file': u'stimuli/326.wav', 'word_id': 326}, {'word': u'\u662f', 'file': u'stimuli/374.wav', 'word_id': 374}, {'word': u'\u6709', 'file': u'stimuli/395.wav', 'word_id': 395}, {'word': u'\u81ea\u5df1', 'file': u'stimuli/427.wav', 'word_id': 427}, {'word': u'\u4e0d', 'file': u'stimuli/206.wav', 'word_id': 206}, {'word': u'\u53cd\u5c0d', 'file': u'stimuli/61.wav', 'word_id': 61}, {'word': u'\u5c0d', 'file': u'stimuli/420.wav', 'word_id': 420}]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="sound_stimuli"/>
+    <Routine name="gatherText"/>
+    <LoopTerminator name="trials_2"/>
+    <Routine name="end"/>
+  </Flow>
+</PsychoPy2experiment>
