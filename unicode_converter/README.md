@@ -12,7 +12,9 @@
 
 - Open terminal
 - If you have navigated to directory containing csv files:
-	- Enter: python unicode_conversion.py
+'''
+python unicode_conversion.py
+'''
 - Else:
 	- Enter: python unicode_conversion.py [path_to_directory]
 - Return
