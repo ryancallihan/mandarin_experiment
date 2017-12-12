@@ -11,6 +11,10 @@ If you publish work using this script please cite the PsychoPy publications:
 """
 
 from __future__ import absolute_import, division
+from psychopy import prefs
+prefs.general['audioLib'] = ['pyo']
+prefs.general['audioDriver'] = [u'jack']
+# start jack in bash with `jackd -r -d alsa -r 44100`
 from psychopy import locale_setup, sound, gui, visual, core, data, event, logging
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
