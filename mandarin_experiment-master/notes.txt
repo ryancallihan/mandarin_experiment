@@ -1,2 +1,1 @@
-add in breaks
-randomize
+stimuli shortened for testing
