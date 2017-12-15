@@ -1,0 +1,7 @@
+word,file,word_id,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,key_resp_welcome.keys,key_resp_welcome.rt,key_resp_instruction.keys,key_resp_instruction.rt,key_resp_sound.keys,key_resp_sound.rt,inputText,key_resp_type.keys,key_resp_type.rt,expName,participant,handedness,frameRate,sex,session,date,
+,,,,,,,space,5.91649212696,,,,,,,,textInputTest,,,None,,,2017_Dez_12_1540,
+,,,,,,,,,space,1.24254202966,,,,,,textInputTest,,,None,,,2017_Dez_12_1540,
+時候,stimuli/154.wav,154,0,0,0,0,,,,,right,1.50884803796,bla bal,"['b', 'l', 'a', 'space', 'b', 'a', 'l', 'return']","[4.303489478275651, 4.404917243312184, 4.523703978557933, 4.67730339118873, 4.7949197301576305, 4.879684446953206, 4.981507738826053, 5.219507130930424]",textInputTest,,,None,,,2017_Dez_12_1540,
+然後,stimuli/489.wav,489,0,1,1,1,,,,,right,1.47496378285,hello,"['h', 'e', 'l', 'l', 'o', 'return']","[1.0512791464199154, 1.1702739082551261, 1.2546036244784773, 1.4078785629981212, 1.5766998377629307, 1.7632977148654163]",textInputTest,,,None,,,2017_Dez_12_1540,
+的,stimuli/440.wav,440,0,2,2,2,,,,,right,2.11901923555,la,"['l', 'a', 'return']","[0.6618044234268154, 0.8311325409638357, 1.27180983132871]",textInputTest,,,None,,,2017_Dez_12_1540,
+變得,stimuli/236.wav,236,0,3,3,3,,,,,right,1.25455428231,bindo,"['b', 'i', 'n', 'd', 'o', 'return']","[0.8648786379982312, 1.5435426888719803, 1.746348482037547, 2.001526054639612, 2.1019480288790646, 2.3398021576344945]",textInputTest,,,None,,,2017_Dez_12_1540,
